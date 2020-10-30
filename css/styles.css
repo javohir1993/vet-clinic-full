@@ -77,10 +77,24 @@ img {
   padding-right: 65px;
   margin-left: auto;
   margin-right: auto;
+  /* background-color: rgba(34, 34, 34, 0.5); */
 }
 
 .site-main {
   flex-grow: 1;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: baseline;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #333333;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
 }
 
 
@@ -320,6 +334,7 @@ img {
   background-image: url("../img/ask-question-img.png");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 
 .ask-question:hover {
@@ -335,6 +350,63 @@ img {
 
 /* MAIN */
 
+
+/* SITEDEMO */
+
+.sitedemo {
+  background-image: url("../img/sitedemo-bg-left.png"),
+    url("../img/sitedemo-bg-right.png");
+  background-repeat: no-repeat;
+  background-size: auto, auto;
+  background-position: calc(50% - 515px) calc(50% - 60px), calc(50% + 650px) calc(50% + 220px);
+  padding-top: 146px;
+  padding-bottom: 290px;
+}
+
+.sitedemo-info {
+  max-width: 610px;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.site-title {
+  margin: 0;
+  margin-bottom: 29px;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 64px;
+}
+
+.site-title__decoration {
+  color: #78C0DE;
+}
+
+.sitedemo__text {
+  max-width: 495px;
+  margin: 0;
+  margin-bottom: 38px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #949494;
+}
+
+.sitedemo__button {
+  padding-right: 48px;
+  padding-left: 47px;
+  text-decoration: none;
+}
+
+.sitedemo__button:hover {
+  background-color: #FFBD54;
+  color: #333333;
+}
+
+.sitedemo__button:active {
+  opacity: 0.6;
+}
+
+
+/* SERVICES-PAGE */
 
 .services-main {
   background-color: #F9F9F9;
@@ -479,7 +551,7 @@ img {
   color: var(--description);
 }
 
-.button {
+.services__button {
   display: inline-block;
   vertical-align: baseline;
   padding: 15px 30px;
@@ -488,7 +560,7 @@ img {
   color: #fff;
 }
 
-.button::before {
+.services__button::before {
   position: absolute;
   z-index: 1;
   content: "";
@@ -498,19 +570,19 @@ img {
   left: 0;
 }
 
-.button:hover {
+.services__button:hover {
   background-color: #000000;
 }
 
-.button:hover::before {
+.services__button:hover::before {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.button__odd {
+.services__button--odd {
   background-color: #FFBD54;
 }
 
-.button__even {
+.services__button--even {
   background-color: #78C0DE;
 }
 
