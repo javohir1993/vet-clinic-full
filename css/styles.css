@@ -72,9 +72,9 @@ img {
 }
 
 .container {
-  max-width: 1350px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1440px;
+  padding-left: 65px;
+  padding-right: 65px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -101,7 +101,7 @@ img {
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 213px;
+  padding-left: 260px;
 }
 
 .site-header__top-address {
@@ -245,6 +245,7 @@ img {
 
 .sitenav__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -615,7 +616,7 @@ img {
 .footer-top__address {
   position: relative;
   z-index: 1;
-  margin-right: 112px;
+  margin-right: auto;
   line-height: 21px;
   font-style: normal;
 }
