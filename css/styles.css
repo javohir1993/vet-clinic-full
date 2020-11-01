@@ -491,7 +491,7 @@ img {
 
 .services-section {
   padding-top: 95px;
-  padding-bottom: 65px;
+  padding-bottom: 127px;
 }
 
 .services-section__title {
@@ -751,6 +751,62 @@ img {
 }
 
 
+/* SUBSCRIPTION */
+
+.subscription {
+  padding-top: 198px;
+  padding-bottom: 153px;
+  background-image: url("../img/subscription-dog.png"),
+    url("../img/subscription-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 360px) center, center top 109px;
+  background-size: 613px 481px, auto 308px;
+}
+
+.subscription-form {
+  margin-left: 222px;
+}
+
+.suscription-form__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.subscription-form__input {
+  width: 335px;
+  padding-left: 22px;
+  padding-top: 18px;
+  padding-bottom: 12px;
+  margin-right: 21px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+}
+
+.subscription-form__button {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  padding-left: 52px;
+  padding-right: 52px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.subscription-form__button:hover {
+  background-color: var(--orange);
+  color: #333333;
+}
+
+.subscription-form__button:active {
+  opacity: 0.6;
+}
 
 
 
