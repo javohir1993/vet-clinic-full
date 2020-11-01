@@ -53,6 +53,8 @@ body {
   padding: 0;
   margin: 0;
   color: #333333;
+  background-color: #F9F9F9;
+  background-image: url("../img/main-bg.png");
 }
 
 img {
@@ -227,7 +229,7 @@ img {
 .logo {
   position: relative;
   z-index: 1;
-  width: 178px;
+  max-width: 178px;
 }
 
 .logo__link {
@@ -248,7 +250,7 @@ img {
 
 .logo__img {
   display: block;
-  width: 178px;
+  max-width: 178px;
   height: 86px;
 }
 
@@ -405,14 +407,89 @@ img {
   opacity: 0.6;
 }
 
-
-/* SERVICES-PAGE */
-
-.services-main {
-  background-color: #F9F9F9;
-  background-image: url("../img/main-bg.png");
+.about__wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 755px;
+  margin-top: 21px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 95px;
+  text-align: center;
 }
 
+.about__wrapper::before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: 0;
+  right: 100%;
+  width: 142px;
+  height: 128px;
+  margin-right: 55px;
+  background-image: url("../img/quote-open.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.about__wrapper::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: 74px;
+  /* transform: translateY(-50%); */
+  left: 100%;
+  width: 148px;
+  height: 78px;
+  margin-left: 36px;
+  background-image: url("../img/quote-close.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.about__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.about__quote {
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
+  color: #949494;
+}
+
+.about__quote::before {
+  display: block;
+  content: "";
+  width: 140px;
+  height: 1px;
+  background-color: #949494;
+  margin-bottom: 35px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about__quote::after {
+  display: block;
+  content: "";
+  width: 140px;
+  height: 1px;
+  background-color: #949494;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+
+/* SERVICES-PAGE */
 
 /* SERVICES-DEMO */
 
@@ -425,7 +502,7 @@ img {
 }
 
 .site-demo__info {
-  width: 447px;
+  max-width: 447px;
   margin-left: 100px;
 }
 
@@ -455,7 +532,7 @@ img {
 .services-types__item {
   position: relative;
   z-index: 1;
-  width: 300px;
+  max-width: 300px;
   margin-right: 35px;
   margin-bottom: 32px;
   padding: 58px 22px 45px 53px;
@@ -619,7 +696,7 @@ img {
 
 .footer-top__logo-img {
   display: block;
-  width: 158px;
+  max-width: 158px;
   height: 77px;
 }
 
@@ -859,5 +936,13 @@ only screen and (                min-resolution: 2dppx) {
 
   .footer-top__tel-numbers::before {
     background-image: url("../img/tel-icon@2x.png");
+  }
+
+  .about__wrapper::before {
+    background-image: url("../img/quote-open@2x.png");
+  }
+
+  .about__wrapper::after {
+    background-image: url("../img/quote-close@2x.png");
   }
 }
