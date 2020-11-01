@@ -487,6 +487,271 @@ img {
 }
 
 
+/* SERVICES-SECTION */
+
+.services-section {
+  padding-top: 95px;
+  padding-bottom: 65px;
+}
+
+.services-section__title {
+  margin: 0;
+  margin-bottom: 80px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 54px;
+  text-align: center;
+}
+
+.services-wrapper {
+  max-width: 1223px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.services__slaider-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.slaider__button {
+  position: absolute;
+  z-index: 1;
+  width: 14px;
+  height: 26px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.button-prev {
+  left: -30px;
+  background-image: url("../img/arrow-left.png");
+}
+
+.button-next {
+  right: -30px;
+  background-image: url("../img/arrow-right.png");
+}
+
+.services__slaider {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slaider__item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #F3F3F3;
+  width: 193px;
+  padding: 30px 32px 28px 35px;
+}
+
+.slaider__item:not(:last-child) {
+  margin-right: 13px;
+}
+
+.slaider__item::before {
+  content: "";
+  width: 100%;
+  height: 78px;
+  margin-bottom: 22px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center top;
+}
+
+.slaider__item--doctor::before {
+  background-image: url("../img/services-doctor.png");
+}
+
+.slaider__item--nurse::before {
+  background-image: url("../img/services-nurse.png");
+}
+
+.slaider__item--surgery::before {
+  background-image: url("../img/services-surgery.png");
+}
+
+.slaider__item--dermotology::before {
+  background-image: url("../img/services-dermotology.png");
+}
+
+.slaider__item--diagnostic::before {
+  background-image: url("../img/services-diagnostic.png");
+}
+
+.slaider__item--ophtolmology::before {
+  background-image: url("../img/services-ophthalmology.png");
+}
+
+.slaider__item:hover {
+  opacity: 0.8;
+}
+
+.slaider__item:active {
+  opacity: 0.6;
+}
+
+.slaider__item--active {
+  border-radius: 5px 5px 0 0;
+  border: none;
+}
+
+.slaider__item--active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 15px;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+}
+
+.slaider__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 126px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.slaider__link::before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 42px 35px;
+  border-radius: 0px 5px 5px 5px;
+  background-color: #fff;
+}
+
+.service__info {
+  margin-left: 67px;
+  max-width: 492px;
+}
+
+.service__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 20px;
+}
+
+.service__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--description);
+}
+
+.service__text--top {
+  margin-bottom: 10px;
+}
+
+.service__text--bottom {
+  margin-bottom: 35px;
+}
+
+.button--price {
+  display: inline-flex;
+  align-items: center;
+  padding-right: 35px;
+  padding-left: 35px;
+  margin-right: 21px;
+  background-color: var(--orange);
+  text-decoration: none;
+}
+
+.button--price::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  margin-right: 7px;
+  background-image: url("../img/price-icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.button--price:hover {
+  background-color: #333333;
+  color: #FFBD54;
+}
+
+.button--price:active {
+  opacity: 0.6;
+}
+
+.button--appointment {
+  display: inline-flex;
+  align-items: center;
+  padding-right: 37px;
+  padding-left: 37px;
+  text-decoration: none;
+}
+
+.button--appointment::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  margin-right: 7px;
+  background-image: url("../img/document-icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.button--appointment:hover {
+  background-color: #FFBD54;
+  color: #333333;
+}
+
+.button--appointment:active {
+  opacity: 0.6;
+}
+
+
+
 
 
 /* SERVICES-PAGE */
@@ -944,5 +1209,46 @@ only screen and (                min-resolution: 2dppx) {
 
   .about__wrapper::after {
     background-image: url("../img/quote-close@2x.png");
+  }
+
+  .button-prev {
+    background-image: url("../img/arrow-left@2x.png");
+  }
+
+  .button-next {
+    background-image: url("../img/arrow-right@2x.png");
+  }
+
+  .slaider__item--doctor::before {
+    background-image: url("../img/services-doctor@2x.png");
+  }
+
+  .slaider__item--nurse::before {
+    background-image: url("../img/services-nurse@2x.png");
+  }
+
+  .slaider__item--surgery::before {
+    background-image: url("../img/services-surgery@2x.png");
+  }
+
+  .slaider__item--dermotology::before {
+    background-image: url("../img/services-dermotology@2x.png");
+  }
+
+  .slaider__item--diagnostic::before {
+    background-image: url("../img/services-diagnostic@2x.png");
+  }
+
+  .slaider__item--ophtolmology::before {
+    background-image: url("../img/services-ophthalmology@2x.png");
+  }
+
+  .button--price::before {
+    background-image: url("../img/price-icon@2x.png");
+  }
+
+  .button--appointment::before {
+    background-image: url("../img/document-icon@2x.png");
+
   }
 }
